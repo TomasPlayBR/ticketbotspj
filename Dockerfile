@@ -12,4 +12,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Comando para iniciar a aplicação
-CMD ["python", "app.py"]  # Substitua "app.py" pelo seu arquivo principal
+CMD ["python", "Main.py"]  # Substitua "app.py" pelo seu arquivo principal
