@@ -5,11 +5,11 @@ FROM python:3.10
 WORKDIR /app
 
 # Copia os arquivos de requisitos e instala as dependências
-COPY Requirement.txt
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
 # Copia o restante dos arquivos da aplicação
 COPY . .
 
 # Comando para iniciar a aplicação
-CMD ["python", "Main.py"]  # Substitua "app.py" pelo seu arquivo principal
+CMD ["python", "Main.py"]  # Substitua "Main.py" pelo teu arquivo principal
